@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de contactos</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+
+    <nav class="navegacion">
+        <div class="contenedor-nav">
+            <div class="app-name">
+                <h2>ClickContact</h2>
+            </div>
+            <div class="add-contact">
+                <h2 class="contact">Crear contacto</h2>
+            </div>
+            <div class="claro-oscuro">
+                <i title="Modo oscuro" class="fa-regular fa-moon"></i>
+            </div>
+        </div>
+    </nav>
+    
+    <header class="head">
+        <h1>Agenda de contactos</h1>
+        <p>Tus contactos, siempre a un toque.</p>
+    </header>
+
+    <main class="contenedor-agenda">
+        <table class="contactos-agenda">
+            <thead>
+                <tr class="encabezado">
+                    <th class="titulo">ID</th>
+                    <th class="titulo">Nombres</th>
+                    <th class="titulo">Apellidos</th>
+                    <th class="titulo">Teléfono</th>
+                    <th class="titulo">Email</th>
+                    <th class="titulo">Acciones</th>
+                </tr>
+            </thead>
+            <tbody class="info">
+                
+            </tbody>
+        </table>
+    </main>
+
+    <form class="nuevo-contacto hidden" id="formulario">
+        <legend>Crear contacto</legend>  
+        <div class="contacto-container">
+            <label for="nombre" name="nombre">Nombre</label>
+            <input required type="text" id="nombre" placeholder="Escribe el nombre">
+            <label for="apellido" name="apellido">Apellido</label>
+            <input required type="text" id="apellido" placeholder="Escribe el apellido">
+            <label for="telefono" name="telefono">Teléfono</label>
+            <input required type="tel" id="telefono" placeholder="Escribe el teléfono">
+            <label for="email" name="email">Email</label>
+            <input required type="email" id="email" placeholder="Escribe el email"> 
+            <button type="submit" id="guardar">Guardar</button>
+        </div>      
+    </form>
+
+
+    <script src="./scripts/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
